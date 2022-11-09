@@ -5,17 +5,17 @@ services:
   calibre:
     image: lscr.io/linuxserver/calibre:latest
     container_name: calibre
-    security_opt:
-      - seccomp:unconfined #optional
+#    security_opt:
+#      - seccomp:unconfined #optional
     environment:
       - PUID=1000
       - PGID=1000
       - TZ=Europe/Madrid
-      - PASSWORD=p4ssw0rd #optional
+#      - PASSWORD= #optional
     volumes:
       - ./data:/config
     ports:
       - "8200:8080"
-      - "8080:8081"
+#      - "8080:8081"
     restart: unless-stopped
 

@@ -12,6 +12,7 @@ services:
       - PGID=1000
       - TZ=Europe/Madrid
 #      - PASSWORD= #optional
+#      - CLI_ARGS= #optional
     volumes:
       - ./data:/config
     ports:
